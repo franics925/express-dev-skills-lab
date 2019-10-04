@@ -24,7 +24,8 @@ function edit(req, res) {
 }
 
 function deleteSkill(req, res) {
-    Todo.deleteOne(req.params.id);
+    console.log('hi' + req.params.id);
+    Skill.deleteOne(req.params.id);
     res.redirect('/skills');
 }
 
@@ -47,8 +48,7 @@ function index(req, res) {
 
 function show(req, res) {
     res.render('skills/show', {
-      skill: Skill.getOne(req.params.id),
-      skillNum: parseInt(req.params.id) + 1
+        skill: Skill.getOne(req.params.id),
+        skillNum: parseInt(req.params.id) + 1
     });
-  }
-
+}

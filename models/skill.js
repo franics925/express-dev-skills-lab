@@ -38,7 +38,7 @@ module.exports = {
   
   function getOne(id) {
     return skills[id];
-  }
+}
   
   function getAll() {
     return skills;

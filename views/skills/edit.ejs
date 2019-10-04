@@ -8,9 +8,11 @@
   <title>Dev Skills</title>
 </head>
 <body>
-  <h1>Edit skill</h1>
+  <h1>Edit <%= skill.name %> Skill:</h1>
   <form action="/skills/<%= idx %>?_method=PUT" method="POST" autocomplete="off">
     <input type="text" name="name" value="<%= skill.name %>">
+    <input type="text" name="description" value="<%= skill.description %>">
+    <input type="text" name="level" value="<%= skill.level %>">
     <button type="submit">Save skill</button>
   </form>
 </body>
