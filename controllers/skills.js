@@ -24,7 +24,7 @@ function edit(req, res) {
 }
 
 function deleteSkill(req, res) {
-    console.log('hi' + req.params.id);
+    // console.log('hi' + req.params.id);
     Skill.deleteOne(req.params.id);
     res.redirect('/skills');
 }

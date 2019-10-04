@@ -13,3 +13,16 @@ a {
   margin: 1em;
   padding: 1em;
 }
+
+li {
+  list-style: none;
+}
+
+.deleteForm {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.deleteForm button {
+  color: red;
+}
